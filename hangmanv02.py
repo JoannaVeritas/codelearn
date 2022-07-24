@@ -9,7 +9,7 @@ def gallows(number_of_lives):
         case 10:
             return None
 
-        case 8:
+        case 9:
             return print('''
 
 |           
@@ -175,7 +175,7 @@ def checking_the_guess():
 
 
 def word_guess():
-    print('Do you want to guess the word? If guessed incorrectly you will loose a life. y or n')
+    print('Do you want to guess the word? y or n')
     decission = input()
 
     if decission == 'y' or decission == 'yes':
@@ -186,12 +186,12 @@ def word_guess():
             print('BRAVO! You guessed correctly. Congratulations')
             exit()
         else:
-            print("Nope. You didn't guess correctly my word. You loose a life.")
-            global lives
+            print("Nope. You didn't guess correctly my word.")
+            # global lives
             
-            gallows(lives)
-            lives = lives - 1
-            print('You have', lives, 'lives lefttttttt')
+            # gallows(lives)
+            # lives = lives - 1
+            # print('You have', lives, 'lives lefttttttt')
 
     elif decission == 'n' or decission == 'no':
         print()
